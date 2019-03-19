@@ -14,6 +14,12 @@ namespace Bomberman
         public FormGame()
         {
             InitializeComponent();
+            Init();
+        }
+
+        private void Init()
+        {
+            MainBoard board = new MainBoard(panelGame);
         }
 
         private void обИгреToolStripMenuItem_Click(object sender, EventArgs e)

@@ -49,7 +49,7 @@
             this.справкаToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(948, 24);
+            this.menuStrip.Size = new System.Drawing.Size(765, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -108,9 +108,10 @@
             this.panelGame.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelGame.AutoSize = true;
             this.panelGame.Location = new System.Drawing.Point(0, 64);
             this.panelGame.Name = "panelGame";
-            this.panelGame.Size = new System.Drawing.Size(948, 485);
+            this.panelGame.Size = new System.Drawing.Size(765, 485);
             this.panelGame.TabIndex = 1;
             // 
             // labelScore
@@ -127,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 549);
+            this.ClientSize = new System.Drawing.Size(765, 549);
             this.Controls.Add(this.labelScore);
             this.Controls.Add(this.panelGame);
             this.Controls.Add(this.menuStrip);
