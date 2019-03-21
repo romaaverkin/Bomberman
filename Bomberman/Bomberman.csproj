@@ -54,6 +54,7 @@
       <DependentUpon>FormGame.cs</DependentUpon>
     </Compile>
     <Compile Include="MainBoard.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormGame.resx">
