@@ -117,5 +117,11 @@ namespace Bomberman
             picture.BringToFront();
             player = new Player(picture);
         }
+
+        public void MovePlayer(Arrows arrow)
+        {
+            if (player == null) return;
+            player.MovePlayer(arrow);
+        }
     }
 }

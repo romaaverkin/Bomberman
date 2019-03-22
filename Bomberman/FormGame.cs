@@ -11,6 +11,8 @@ namespace Bomberman
 {
     public partial class FormGame : Form
     {
+        MainBoard board;
+
         public FormGame()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace Bomberman
 
         private void Init()
         {
-            MainBoard board = new MainBoard(panelGame);
+            board = new MainBoard(panelGame);
         }
 
         private void обИгреToolStripMenuItem_Click(object sender, EventArgs e)
@@ -30,6 +32,25 @@ namespace Bomberman
         private void обАвтореToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Аверкин Роман.", "Автор");
+        }
+
+        private void FormGame_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Left:
+                    board.MovePlayer(Arrows.left);
+                    break;
+                case Keys.Right:
+                    board.MovePlayer(Arrows.right);
+                    break;
+                case Keys.Up:
+                    board.MovePlayer(Arrows.up);
+                    break;
+                case Keys.Down:
+                    board.MovePlayer(Arrows.dawn);
+                    break;
+            }
         }
     }
 }
